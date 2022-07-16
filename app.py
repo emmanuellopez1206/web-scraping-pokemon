@@ -29,4 +29,6 @@ for row in rows:
     speed.append(row.find_all("td")[9].get_text())
 
 df = pd.DataFrame({"nombres":names, "types":types, "total":total, "hp":hp, "attack":attack, "defense":defense, "sp_attack":sp_attack, "sp_defense":sp_defense, "speeds":speed})
+
+df.to_csv("Pokemones.csv")
     
